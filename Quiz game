@@ -1,0 +1,50 @@
+[12:44:34.654] Running build in Washington, D.C., USA (East) – iad1
+[12:44:34.655] Build machine configuration: 2 cores, 8 GB
+[12:44:34.671] Cloning github.com/Liwandowski9/codespaces-react (Branch: main, Commit: 0ffab34)
+[12:44:34.813] Previous build caches not available
+[12:44:34.988] Cloning completed: 317.000ms
+[12:44:35.324] Running "vercel build"
+[12:44:36.507] Vercel CLI 44.4.3
+[12:44:38.025] Installing dependencies...
+[12:44:43.207] 
+[12:44:43.207] added 295 packages in 4s
+[12:44:43.208] 
+[12:44:43.208] 61 packages are looking for funding
+[12:44:43.208]   run `npm fund` for details
+[12:44:43.256] Running "npm run build"
+[12:44:43.406] 
+[12:44:43.407] > codespaces-react@0.1.0 build
+[12:44:43.407] > vite build
+[12:44:43.407] 
+[12:44:43.713] [36mvite v4.5.9 [32mbuilding for production...[36m[39m
+[12:44:43.760] transforming...
+[12:44:43.807] [32m✓[39m 5 modules transformed.
+[12:44:43.807] [32m✓ built in 93ms[39m
+[12:44:43.808] [31m[vite:esbuild] Transform failed with 1 error:
+[12:44:43.808] /vercel/path0/src/App.jsx:31:29: ERROR: Expected "}" but found "Question"[39m
+[12:44:43.808] file: [36m/vercel/path0/src/App.jsx:31:29[39m
+[12:44:43.808] [33m
+[12:44:43.808] [33mExpected "}" but found "Question"[33m
+[12:44:43.809] 29 |  export default App;
+[12:44:43.809] 30 |  import { useState, useMemo, useEffect } from 'react';
+[12:44:43.809] 31 |  import { quizQuestions, type Question } from '@/lib/quiz-data';
+[12:44:43.809]    |                               ^
+[12:44:43.809] 32 |  import { Button } from '@/components/ui/button';
+[12:44:43.809] 33 |  import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+[12:44:43.809] [39m
+[12:44:43.809] [31merror during build:
+[12:44:43.809] Error: Transform failed with 1 error:
+[12:44:43.809] /vercel/path0/src/App.jsx:31:29: ERROR: Expected "}" but found "Question"
+[12:44:43.810]     at failureErrorWithLog (/vercel/path0/node_modules/esbuild/lib/main.js:1649:15)
+[12:44:43.810]     at /vercel/path0/node_modules/esbuild/lib/main.js:847:29
+[12:44:43.810]     at responseCallbacks.<computed> (/vercel/path0/node_modules/esbuild/lib/main.js:703:9)
+[12:44:43.810]     at handleIncomingPacket (/vercel/path0/node_modules/esbuild/lib/main.js:762:9)
+[12:44:43.810]     at Socket.readFromStdout (/vercel/path0/node_modules/esbuild/lib/main.js:679:7)
+[12:44:43.810]     at Socket.emit (node:events:518:28)
+[12:44:43.810]     at addChunk (node:internal/streams/readable:561:12)
+[12:44:43.810]     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[12:44:43.810]     at Readable.push (node:internal/streams/readable:392:5)
+[12:44:43.810]     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)[39m
+[12:44:43.831] Error: Command "npm run build" exited with 1
+[12:44:44.027] 
+[12:44:46.969] Exiting build container
